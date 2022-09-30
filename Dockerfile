@@ -1,6 +1,5 @@
 FROM openjdk:8-jdk-alpine
-WORKDIR /
-COPY target/*.jar app.jar
+COPY target/*.jar /app.jar
 
 
 # Añadida la opción java.security.egd para evitar que el servidor se cuelgue en Digitalocean
