@@ -4,8 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>es.ua.mads</groupId>
-    <artifactId>mads-todolist</artifactId>
+
+    <artifactId>todolist-aledeleonez</artifactId>
     <version>1.0.1</version>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
