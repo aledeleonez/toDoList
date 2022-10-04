@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 
-<head th:replace="fragments :: head (titulo='Acerca de')"></head>
+<head th:replace="fragments :: head (titulo='Acerca de')"><title>Acerca de</title></head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
@@ -13,15 +13,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tareas <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/listaTareas">Tareas <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown my-2 my-lg-0">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nombre usuario
-        </a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Cuenta</a>
-          <a class="dropdown-item" href="#">Cerrar sesión</a>
+          <a class="dropdown-item" href="/logout">Cerrar sesión</a>
         </div>
       </li>
     </ul>

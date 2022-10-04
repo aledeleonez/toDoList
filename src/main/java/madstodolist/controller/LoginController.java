@@ -90,4 +90,7 @@ public class LoginController {
         managerUserSession.logout();
         return "redirect:/login";
    }
+
+    @GetMapping("/listaTareas")
+    public String listaTareas(Model model){return "listaTareas";}
 }
