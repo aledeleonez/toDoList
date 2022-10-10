@@ -34,9 +34,10 @@ public class RegistradosController {
     @GetMapping("/registrados/:{id}")
     public String usuariosRegistradosId(@PathVariable(value = "id") Long idUsuario, Model model){
         Usuario usuario = usuarioService.findById(idUsuario);
+        model.addAttribute("usuario", usuario);
         if (usuario == null) {
             throw new UsuarioNoLogeadoException();
         }
-        return "registrados";
+        return "descripcionUsuario";
     }
 }

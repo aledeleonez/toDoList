@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Descripción de usuario</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col">
+      <h2>Datos del usuario</h2>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <table class="table">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Fecha nacimiento</th>
+        <th scope="col">eMail</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td th:text="${usuario.getId()}"/>
+        <td th:text="${usuario.getNombre()}"/>
+        <td th:text="${usuario.getFechaNacimiento()}"/>
+        <td th:text="${usuario.getEmail()}"/>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
