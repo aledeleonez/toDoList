@@ -23,6 +23,7 @@ public class RegistradosController {
 
     @Autowired
     UsuarioRepository usuarioRepository;
+    
 
     @GetMapping("/registrados")
     public String usuariosRegistrados(Model model){
