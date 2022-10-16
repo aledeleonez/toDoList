@@ -1,4 +1,6 @@
 -------------------------------------------------------------------------------
 Test set: madstodolist.TareaWebTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.966 s - in madstodolist.TareaWebTest
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.233 s - in madstodolist.TareaWebTest
+
